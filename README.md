@@ -51,9 +51,9 @@ The semiconductor industry is at the heart of technological advancements, poweri
 ## Project Structure
 semiconductor-industry-analysis/
 ├── data/
-│   ├── raw/                  # Raw, unprocessed data
-│   ├── processed/            # Cleaned and processed data
-│   └── external/             # Data from external sources
+│   ├── raw/
+│   ├── processed/
+│   └── external/
 ├── notebooks/
 │   ├── 01_data_collection.ipynb
 │   ├── 02_data_cleaning.ipynb
@@ -73,15 +73,15 @@ semiconductor-industry-analysis/
 │   └── utils/
 │       └── helper_functions.py
 ├── reports/
-│   ├── figures/              # Generated plots and figures
-│   └── slides/               # Presentation slides
+│   ├── figures/
+│   └── slides/
 ├── app/
-│   └── dashboard.py          # Interactive dashboard application
-├── requirements.txt          # Project dependencies
-├── README.md                 # Project README
-├── LICENSE                   # License information
-├── .gitignore                # Files and directories to ignore in Git
-└── setup.py                  # Makes project installable (optional)
+│   └── dashboard.py
+├── requirements.txt
+├── README.md
+├── LICENSE
+├── .gitignore
+└── setup.py
 
 ## Usage
 ## Data Collection
@@ -92,30 +92,37 @@ semiconductor-industry-analysis/
 ## Data Cleaning and Preprocessing
 1. Run 02_data_cleaning.ipynb to clean and preprocess the collected data.
 
-##Exploratory Data Analysis
+## Exploratory Data Analysis
 1. Use 03_exploratory_data_analysis.ipynb to explore the data and generate initial insights.
-Modeling
-Execute 04_modeling.ipynb to build predictive models and perform analysis.
-Visualization
-Run 05_visualization.ipynb to generate visualizations and plots for the report.
-Interactive Dashboard
-Navigate to the app/ directory.
-Features
-Comprehensive Data Collection: Automated scripts to gather data from multiple reliable sources.
-Data Preprocessing Pipelines: Modular code for data cleaning and feature engineering.
-Exploratory Data Analysis: In-depth analysis of macroeconomic factors and company performance.
-Predictive Modeling: Time-series forecasting and regression models to predict industry trends.
-Interactive Dashboard: User-friendly interface to visualize data and model outputs.
-Supply Chain Mapping: Visualization of the semiconductor supply chain and identification of key players.
-Results
+
+## Modeling
+1. Execute 04_modeling.ipynb to build predictive models and perform analysis.
+
+## Visualization
+1. Run 05_visualization.ipynb to generate visualizations and plots for the report.
+
+## Interactive Dashboard
+1. Navigate to the app/ directory.
+2. Run the dashboard application: streamlit run dashboard.py
+
+## Features
+- Comprehensive Data Collection: Automated scripts to gather data from multiple reliable sources.
+- Data Preprocessing Pipelines: Modular code for data cleaning and feature engineering.
+- Exploratory Data Analysis: In-depth analysis of macroeconomic factors and company performance.
+- Predictive Modeling: Time-series forecasting and regression models to predict industry trends.
+- Interactive Dashboard: User-friendly interface to visualize data and model outputs.
+- Supply Chain Mapping: Visualization of the semiconductor supply chain and identification of key players.
+
+## Results
 Findings and insights are documented in the reports/ directory, including:
 
-The impact of macroeconomic indicators on the semiconductor industry.
-Comparative analysis of major companies' financial performance.
-Predictive models' performance metrics and forecasts.
-Visualizations illustrating trends, correlations, and supply chain dynamics.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- The impact of macroeconomic indicators on the semiconductor industry.
+- Comparative analysis of major companies' financial performance.
+- Predictive models' performance metrics and forecasts.
+- Visualizations illustrating trends, correlations, and supply chain dynamics.
+
+## License
+- This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
 - Evan Baisden
