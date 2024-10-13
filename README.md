@@ -1,5 +1,5 @@
-Analyzing the Semiconductor Industry: A Macro-to-Micro Perspective Using Data Science
-Overview
+**Analyzing the Semiconductor Industry: A Macro-to-Micro Perspective Using Data Science**
+**Overview**
 This project provides a comprehensive analysis of the semiconductor industry by examining macroeconomic factors, supply chain dynamics, and individual company performance, focusing on major players like NVIDIA (NVDA) and Taiwan Semiconductor Manufacturing Company (TSMC). The goal is to develop data-driven insights and predictive models that can forecast industry trends and company performance.
 
 Table of Contents
