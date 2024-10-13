@@ -16,7 +16,7 @@ This project provides a comprehensive analysis of the semiconductor industry by 
 - License
 - Contact
 
-##Project Motivation
+## Project Motivation
 
 The semiconductor industry is at the heart of technological advancements, powering everything from smartphones to artificial intelligence. Understanding the macroeconomic factors and supply chain dynamics that influence this industry is crucial for investors, policymakers, and technologists. This project aims to:
 
@@ -26,7 +26,7 @@ The semiconductor industry is at the heart of technological advancements, poweri
 - Develop predictive models to forecast industry trends and company performance.
 - Create an interactive dashboard for data visualization and exploration.
 
-##Data Sources
+## Data Sources
 
 - Macroeconomic Data:
   - World Bank Open Data
@@ -48,7 +48,7 @@ The semiconductor industry is at the heart of technological advancements, poweri
   - NewsAPI.org
   - Twitter API
 
-##Project Structure
+## Project Structure
 semiconductor-industry-analysis/
 ├── data/
 │   ├── raw/                  # Raw, unprocessed data
