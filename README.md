@@ -1,4 +1,4 @@
-*Analyzing the Semiconductor Industry: A Macro-to-Micro Perspective Using Data Science*
+****Analyzing the Semiconductor Industry: A Macro-to-Micro Perspective Using Data Science****
 
 **Overview**
 
