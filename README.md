@@ -1,8 +1,11 @@
-**Analyzing the Semiconductor Industry: A Macro-to-Micro Perspective Using Data Science**
+*Analyzing the Semiconductor Industry: A Macro-to-Micro Perspective Using Data Science*
+
 **Overview**
+
 This project provides a comprehensive analysis of the semiconductor industry by examining macroeconomic factors, supply chain dynamics, and individual company performance, focusing on major players like NVIDIA (NVDA) and Taiwan Semiconductor Manufacturing Company (TSMC). The goal is to develop data-driven insights and predictive models that can forecast industry trends and company performance.
 
-Table of Contents
+**Table of Contents**
+
 Project Motivation
 Data Sources
 Project Structure
@@ -12,41 +15,40 @@ Features
 Results
 License
 Contact
-Project Motivation
+
+**Project Motivation**
+
 The semiconductor industry is at the heart of technological advancements, powering everything from smartphones to artificial intelligence. Understanding the macroeconomic factors and supply chain dynamics that influence this industry is crucial for investors, policymakers, and technologists. This project aims to:
 
-Analyze global economic indicators affecting the semiconductor industry.
-Examine the supply chain, including key suppliers and potential bottlenecks.
-Compare financial performance and strategies of major companies like NVIDIA and TSMC.
-Develop predictive models to forecast industry trends and company performance.
-Create an interactive dashboard for data visualization and exploration.
-Data Sources
-Macroeconomic Data:
+- Analyze global economic indicators affecting the semiconductor industry.
+- Examine the supply chain, including key suppliers and potential bottlenecks.
+- Compare financial performance and strategies of major companies like NVIDIA and TSMC.
+- Develop predictive models to forecast industry trends and company performance.
+- Create an interactive dashboard for data visualization and exploration.
 
-World Bank Open Data
-International Monetary Fund (IMF) Data
-Federal Reserve Economic Data (FRED)
-Organization for Economic Co-operation and Development (OECD) Statistics
-Industry-Specific Data:
+**Data Sources**
 
-Semiconductor Industry Association (SIA)
-Gartner Reports
-Statista
-Company Financial Data:
+- Macroeconomic Data:
+  - World Bank Open Data
+  - International Monetary Fund (IMF) Data
+  - Federal Reserve Economic Data (FRED)
+  - Organization for Economic Co-operation and Development (OECD) Statistics
+- Industry-Specific Data:
+  - Semiconductor Industry Association (SIA)
+  - Gartner Reports
+  - Statista
+- Company Financial Data:
+  - SEC EDGAR Database
+  - Yahoo Finance API
+  - Alpha Vantage API
+- Market and Stock Data:
+  - Tiingo API
+  - NASDAQ Data Link
+- Alternative Data (Optional):
+  - NewsAPI.org
+  - Twitter API
 
-SEC EDGAR Database
-Yahoo Finance API
-Alpha Vantage API
-Market and Stock Data:
-
-Tiingo API
-NASDAQ Data Link
-Alternative Data (Optional):
-
-NewsAPI.org
-Twitter API
-
-Project Structure
+**Project Structure**
 semiconductor-industry-analysis/
 ├── data/
 │   ├── raw/                  # Raw, unprocessed data
