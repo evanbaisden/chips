@@ -83,15 +83,17 @@ semiconductor-industry-analysis/
 ├── .gitignore                # Files and directories to ignore in Git
 └── setup.py                  # Makes project installable (optional)
 
-Usage
-Data Collection
-Navigate to the notebooks/ directory.
-Open and run 01_data_collection.ipynb to collect the required data.
-Ensure you have the necessary API keys and update them in the notebook or configuration files.
-Data Cleaning and Preprocessing
-Run 02_data_cleaning.ipynb to clean and preprocess the collected data.
-Exploratory Data Analysis
-Use 03_exploratory_data_analysis.ipynb to explore the data and generate initial insights.
+## Usage
+## Data Collection
+1. Navigate to the notebooks/ directory.
+2. Open and run 01_data_collection.ipynb to collect the required data.
+  - Ensure you have the necessary API keys and update them in the notebook or configuration files.
+
+## Data Cleaning and Preprocessing
+1. Run 02_data_cleaning.ipynb to clean and preprocess the collected data.
+
+##Exploratory Data Analysis
+1. Use 03_exploratory_data_analysis.ipynb to explore the data and generate initial insights.
 Modeling
 Execute 04_modeling.ipynb to build predictive models and perform analysis.
 Visualization
