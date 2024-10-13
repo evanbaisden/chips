@@ -115,8 +115,7 @@ Visualizations illustrating trends, correlations, and supply chain dynamics.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Contact
-Evan Baisden
-LinkedIn
-Email: ehbaisden@gmail.com
-Phone: (813) 361-2252
+## Contact
+- Evan Baisden
+- LinkedIn
+- Email: ehbaisden@gmail.com
