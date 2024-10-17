@@ -59,6 +59,9 @@ target/
 # DotEnv configuration
 .env
 
+# Configuration files with sensitive data
+config.py
+
 # Database
 *.db
 *.rdb
