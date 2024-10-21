@@ -1,37 +1,35 @@
-import pandas as pd
-from alpha_vantage.timeseries import TimeSeries
-from dotenv import load_dotenv
 import os
+import pandas as pd
+import yfinance as yf
+from dotenv import load_dotenv
+import time
 
-# Determine the path to the .env file
-script_dir = os.path.dirname(os.path.abspath(__file__))
-project_root = os.path.abspath(os.path.join(script_dir, '..', '..'))
+# Load environment variables
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 dotenv_path = os.path.join(project_root, '.env')
-
-# Load environment variables from the .env file
 load_dotenv(dotenv_path=dotenv_path)
 
-# For debugging
-print("dotenv_path:", dotenv_path)
-print("ALPHA_VANTAGE_API_KEY:", os.getenv('ALPHA_VANTAGE_API_KEY'))
-
 def fetch_stock_data(symbol):
-    api_key = os.getenv('ALPHA_VANTAGE_API_KEY')
-    if not api_key:
-        raise ValueError("ALPHA_VANTAGE_API_KEY is not set. Please check your .env file.")
-    ts = TimeSeries(key=api_key, output_format='pandas')
-    data, _ = ts.get_daily(symbol=symbol, outputsize='full')
+    print(f"Fetching stock data for {symbol}...")
+    data = yf.download(symbol, period='max')
     return data
 
+def main():
+    # List of semiconductor companies
+    company_symbols = ['NVDA', 'AMD', 'INTC', 'TSM', 'ASML', 'QCOM', 'MU', 'AVGO', 'TXN']
+
+    raw_data_dir = os.path.join(project_root, 'data', 'raw')
+    os.makedirs(raw_data_dir, exist_ok=True)
+
+    for symbol in company_symbols:
+        try:
+            stock_data = fetch_stock_data(symbol)
+            output_path = os.path.join(raw_data_dir, f'{symbol}_stock_data.csv')
+            stock_data.to_csv(output_path)
+            print(f"Data for {symbol} saved to {output_path}\n")
+            time.sleep(1)  # Sleep to prevent overloading the API
+        except Exception as e:
+            print(f"An error occurred for {symbol}: {e}")
+
 if __name__ == "__main__":
-    # Fetch data for NVIDIA
-    nvda_data = fetch_stock_data('NVDA')
-
-    # Determine the output directory
-    output_dir = os.path.join(os.getcwd(), 'data', 'raw')
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Save the data to a CSV file
-    output_path = os.path.join(output_dir, 'NVDA_stock_data.csv')
-    nvda_data.to_csv(output_path)
-    print(f"Data saved to {output_path}")
+    main()
