@@ -1,10 +1,12 @@
-# local package
--e .
-
-# external requirements
-click
-Sphinx
-coverage
-awscli
-flake8
-python-dotenv>=0.5.1
+pandas
+numpy
+matplotlib
+seaborn
+yfinance
+requests
+python-dotenv
+sec-edgar-downloader
+beautifulsoup4
+scikit-learn
+statsmodels
+nltk
